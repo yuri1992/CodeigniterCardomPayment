@@ -4,15 +4,21 @@ This Implement The lowprofile Iframe Or Redrice type of payment (http://kb.cardc
 You can feel free to extend this and support few more types of payments.
 
 ## Install
-### 1. Copy Application File To your Codeigniter Framework Folder
-### 2. Loading Libary
+#### 1. Copy Application File To your Codeigniter Framework Folder
+#### 2. Loading Libary
 ```
     $this->load->library('cardcom_payment');
 ```
-### 3. initial Config Params:
+#### 3. initial Config Params:
 enter to application/config/cardcom_payment , and change the config parameters.
 * terminal_number - number of your private terminal (1000 for testing)
 * username - your username if cardcom system
 * api_level - currectly support fully api 9
 * codepage
+```
+$config['terminal_number'] = '';
+$config['username'] = '';
+$config['api_level'] = 9;
+$config['codepage'] = 65001;
+```
   
